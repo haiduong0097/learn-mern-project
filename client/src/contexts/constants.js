@@ -1,7 +1,7 @@
 export const apiUrl =
   process.env.NODE_ENV !== "production"
     ? "http://localhost:5000/api"
-    : "https://enigmatic-depths-43746.herokuapp.com/";
+    : "https://enigmatic-depths-43746.herokuapp.com";
 
 export const LOCAL_STORAGE_TOKEN_NAME = "learnit-mern";
 
