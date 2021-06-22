@@ -32,6 +32,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => res.send("Hello world! NodeJS running."));
+app.get("/api", (req, res) => res.send("Hello world! NodeJS running."));
+
 app.use("/api/auth", authRouter);
 app.use("/api/posts", postRouter);
 
